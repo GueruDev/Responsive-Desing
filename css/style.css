@@ -56,12 +56,12 @@ html{
     font-family: "Poppins", sans-serif;
     margin-bottom: 2rem;
 }
-.about > h1{
+.about > .about-t > h1{
     font-size: 2rem;
     text-align: center;
     color: darkblue;
 }
-.about > p{
+.about > .about-t > p{
     font-size: 1.3rem;
 }
 .about > img{
@@ -88,11 +88,6 @@ html{
 }
 
 
-
-
-
-
-
 /* FOOTER */
 .footer{
     text-align: center;
@@ -102,8 +97,62 @@ html{
     font-size: 1.5rem;
     padding: 1.2rem 0;
 }
-@media (min-width: 600px) {
-    
+/* RESPONSIVE */
+
+.about, .types, .mobile, .tablet, .desktop{
+    display: flex;
+    flex-direction: column;
 }
 
 
+@media (min-width: 600px) {
+    .about{
+        flex-direction: row;
+    }
+    .about > img{
+        order: 2;
+    }
+    .about-t{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+        order:1;
+
+        text-align: justify;
+    }
+    
+    .mobile{
+        flex-direction: row;
+    }
+    .mobile-t{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        
+        text-align: justify;
+    }
+    .tablet{
+        flex-direction: row;
+    }
+    .tablet > img{
+        order: 2;
+    }
+    .tablet-t{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+        order:1;
+        
+        text-align: justify;
+    }
+    .desktop{
+        flex-direction: row;
+    }
+    .desktop-t{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+
+        text-align: justify;
+    }
+}
