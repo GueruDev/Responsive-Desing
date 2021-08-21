@@ -56,11 +56,6 @@ html{
     font-family: "Poppins", sans-serif;
     margin-bottom: 2rem;
 }
-.about > .about-t > h1{
-    font-size: 2rem;
-    text-align: center;
-    color: darkblue;
-}
 .about > .about-t > p{
     font-size: 1.3rem;
 }
@@ -84,8 +79,9 @@ html{
 .t-img{
     display: block;
     margin: 0 auto;
-    height:20rem;
+    height:17rem;
 }
+
 
 
 /* FOOTER */
@@ -154,5 +150,39 @@ html{
         margin-left: 1rem;
 
         text-align: justify;
+    }
+}
+@media (min-width:800px){
+    .main, .nav{
+        max-width: 1000px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .ty-p , .ty-h2, .abt-t, .abt-h2{
+        font-size: 1.8rem;
+    }
+    .about > .about-t > p{
+        font-size: 1.8rem;
+    }
+    
+    .respon-desk{
+        display: flex;
+        flex-direction: row;
+    }
+    .mobile , .tablet{
+        flex-direction: column;
+    }
+    .mobile-t , .tablet-t{
+        margin: 0;
+    }
+    .t-img{
+        height: 25rem;
+    }
+    .about > img{
+        height: 36rem;
     }
 }
