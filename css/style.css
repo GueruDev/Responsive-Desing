@@ -101,7 +101,7 @@ html{
 }
 
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
     .about{
         flex-direction: row;
     }
@@ -185,4 +185,4 @@ html{
     .about > img{
         height: 36rem;
     }
-}
+} */
